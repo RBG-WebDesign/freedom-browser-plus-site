@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Freedom Browser Plus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Freedom Browser Plus home">
+        <span class="brand-mark">FB</span>
+        <span>Freedom<span>Browser</span>+</span>
+      </a>
+      <div class="nav-links" aria-label="Site navigation">
+        <a href="mission.html">Mission</a>
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <button class="button" onclick="triggerInstall()">Install</button>
+    </nav>
+
+    <main class="page">
+      <header class="page-header">
+        <p class="eyebrow">About Us</p>
+        <h1>A small tool for people who want a quieter browser.</h1>
+        <p class="lead">
+          Freedom Browser Plus is made for people who use the internet to work, learn, build, and communicate, but do not want every tab to become a fight for their attention.
+        </p>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h2>What we make</h2>
+          <p>A Chrome extension that helps hide or block distracting sites, search results, video cards, news links, and forum posts based on filters the user controls.</p>
+        </article>
+        <article class="card">
+          <h2>Who it helps</h2>
+          <p>Workers, founders, students, parents, creators, and anyone who wants to use the browser without getting pulled into low-value loops.</p>
+        </article>
+        <article class="card">
+          <h2>What we value</h2>
+          <p>Local control, transparent filters, practical focus, and a browsing experience that helps people leave the screen with energy left.</p>
+        </article>
+      </section>
+    </main>
+
+    <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
+      <div class="modal-card">
+        <span class="brand-mark" style="margin: 0 auto;">FB</span>
+        <h2 id="install-title">Almost Ready</h2>
+        <p>Once the Chrome Web Store listing is live, this button should link directly to the published extension.</p>
+        <button class="button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <footer class="footer">&copy; 2026 Freedom Browser Plus. Built to protect focus.</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

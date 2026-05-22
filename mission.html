@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission | Freedom Browser Plus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Freedom Browser Plus home">
+        <span class="brand-mark">FB</span>
+        <span>Freedom<span>Browser</span>+</span>
+      </a>
+      <div class="nav-links" aria-label="Site navigation">
+        <a href="mission.html">Mission</a>
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <button class="button" onclick="triggerInstall()">Install</button>
+    </nav>
+
+    <main class="page">
+      <header class="page-header">
+        <p class="eyebrow">Mission</p>
+        <h1>Keep harmful thought loops out of the workday.</h1>
+        <p class="lead">
+          Freedom Browser Plus exists to help you build a browser environment that supports focus, work, family, health, study, business, craft, and real recreation.
+        </p>
+      </header>
+
+      <section class="prose">
+        <p>
+          The modern browser can become a conveyor belt of outrage, envy, panic, and low-value noise. Our mission is to help stop that material before it enters your attention, so your mind has room for deep work, practical decisions, and life outside the screen.
+        </p>
+        <p>
+          We believe attention is productive capital. Protecting it can improve your income and work performance because you spend more time doing the thing you came to do. It can also improve your relationships because you arrive with more patience, presence, and original thought instead of carrying the mood of the feed into every room.
+        </p>
+        <p>
+          This plugin is built for people who want their own thoughts back. It creates friction before manipulative headlines, addictive feeds, and corrosive loops get a vote in the day. As your attention comes back, relationships, hobbies, exercise, and genuine curiosity have space to grow again.
+        </p>
+      </section>
+
+      <section class="feature-list" aria-label="Mission goals">
+        <div>Protect the workday from sites and feeds that pull you away from the task.</div>
+        <div>Reduce harmful thought viruses before they become your inner monologue.</div>
+        <div>Make it easier to finish revenue-producing work, write, build, study, plan, and ship.</div>
+        <div>Make room for hobbies, better conversations, and self-directed thought.</div>
+      </section>
+    </main>
+
+    <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
+      <div class="modal-card">
+        <span class="brand-mark" style="margin: 0 auto;">FB</span>
+        <h2 id="install-title">Almost Ready</h2>
+        <p>Once the Chrome Web Store listing is live, this button should link directly to the published extension.</p>
+        <button class="button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <footer class="footer">&copy; 2026 Freedom Browser Plus. Built to protect focus.</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

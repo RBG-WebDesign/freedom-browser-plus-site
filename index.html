@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom Browser Plus | Chrome Extension</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Freedom Browser Plus home">
+        <span class="brand-mark">FB</span>
+        <span>Freedom<span>Browser</span>+</span>
+      </a>
+      <div class="nav-links" aria-label="Site navigation">
+        <a href="mission.html">Mission</a>
+        <a href="about.html">About Us</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <button class="button" onclick="triggerInstall()">Install</button>
+    </nav>
+
+    <main class="home-main">
+      <div class="home-hero">
+        <section class="home-copy" aria-labelledby="home-title">
+          <p class="chrome-badge">Available for Chrome</p>
+          <h1 id="home-title">Freedom Browser Plus</h1>
+          <p class="hero-copy">
+            Block distracting sites, quiet harmful feeds, and keep your browser pointed at the work you opened it to finish.
+          </p>
+          <button class="button install-button" onclick="triggerInstall()">Install Extension</button>
+          <div class="trust-row" aria-label="Extension highlights">
+            <span>No account required</span>
+            <span>User-controlled filters</span>
+            <span>Built for focus</span>
+          </div>
+        </section>
+
+        <section class="extension-preview" aria-label="Freedom Browser Plus extension preview">
+          <div class="browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div>chrome://extensions</div>
+          </div>
+          <div class="preview-panel">
+            <div class="preview-header">
+              <span class="brand-mark">FB</span>
+              <div>
+                <strong>Freedom Browser Plus</strong>
+                <small>Focus protection active</small>
+              </div>
+            </div>
+            <div class="status-line">
+              <span>Workday Shield</span>
+              <strong>On</strong>
+            </div>
+            <div class="filter-list">
+              <p>Distracting domains hidden</p>
+              <p>Search result filtering enabled</p>
+              <p>Feed loops reduced</p>
+            </div>
+            <button class="preview-button" type="button">Open Settings</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
+      <div class="modal-card">
+        <span class="brand-mark" style="margin: 0 auto;">FB</span>
+        <h2 id="install-title">Almost Ready</h2>
+        <p>Once the Chrome Web Store listing is live, this button should link directly to the published extension.</p>
+        <button class="button" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <footer class="footer">&copy; 2026 Freedom Browser Plus. Built to protect focus.</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
