@@ -69,7 +69,7 @@ a {
   z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 24px;
   padding: 18px clamp(20px, 5vw, 56px);
   background: rgba(255, 255, 255, 0.94);
@@ -87,15 +87,68 @@ a {
 }
 
 .brand-mark {
+  position: relative;
   width: 38px;
   height: 38px;
-  display: grid;
-  place-items: center;
-  border-radius: 9px;
-  background: var(--blue);
-  color: var(--white);
-  font-size: 14px;
-  box-shadow: 0 10px 25px rgba(23, 78, 166, 0.22);
+  display: inline-block;
+  flex: 0 0 auto;
+  border-radius: 13px 13px 16px 16px;
+  background:
+    linear-gradient(145deg, #2d7df0 0%, #174ea6 54%, #0f2f66 100%);
+  clip-path: polygon(50% 0, 90% 13%, 90% 57%, 50% 100%, 10% 57%, 10% 13%);
+  box-shadow:
+    0 12px 26px rgba(23, 78, 166, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 9px 9px 13px 13px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+  clip-path: inherit;
+}
+
+.logo-shackle {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #ffffff;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.logo-body {
+  position: absolute;
+  left: 10px;
+  top: 19px;
+  z-index: 2;
+  width: 18px;
+  height: 12px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.12);
+}
+
+.logo-body::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--blue-dark);
+}
+
+.modal-logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .brand span span {
@@ -106,9 +159,14 @@ a {
   display: flex;
   align-items: center;
   gap: 22px;
+  margin-left: clamp(180px, 30vw, 500px);
   color: #334155;
   font-size: 14px;
   font-weight: 750;
+}
+
+.nav > .button {
+  margin-left: auto;
 }
 
 .nav-links a:hover {
@@ -302,8 +360,9 @@ h1 {
 }
 
 .install-button {
+  width: 100%;
   min-height: 82px;
-  padding: 0 clamp(38px, 7vw, 86px);
+  padding: 0 clamp(24px, 5vw, 56px);
   border-radius: 18px;
   background:
     linear-gradient(135deg, #1a73e8, var(--blue-dark));
