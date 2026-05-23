@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy | Liberty Lock Plus</title>
-  <link rel="stylesheet" href="styles.css?v=20260522-2">
+  <link rel="stylesheet" href="styles.css?v=20260522-5">
 </head>
 <body>
   <div class="site-shell">
@@ -17,8 +17,10 @@
         <a href="mission.html">Mission</a>
         <a href="about.html">About Us</a>
         <a href="privacy.html">Privacy</a>
+        <a href="donate.html">Support</a>
       </div>
-      <button class="button" onclick="triggerInstall()">Install</button>
+      <a class="button secondary nav-support" href="donate.html">Donate</a>
+      <a class="button" href="https://chromewebstore.google.com/detail/liberty-lock-plus/bidblgoobmadjoogpfpldkonhlhlhfmn">Install</a>
     </nav>
 
     <main class="page">
@@ -44,6 +46,56 @@
           <p>Every filter should be understandable. You should know what is being hidden and be able to change the rules when your goals change.</p>
         </article>
       </section>
+
+      <section class="prose privacy-copy">
+        <h2>What Liberty Lock Plus stores</h2>
+        <p>
+          The extension is designed around browser storage for your settings. That includes your custom sites, phrase filters, strict mode choices, and other blocking preferences that make the tool match your own attention goals.
+        </p>
+        <p>
+          Those settings are used by the extension to decide what to block or hide while you browse. They are not meant to create an account, build a profile, or power a recommendation feed.
+        </p>
+
+        <h2>What happens while you browse</h2>
+        <p>
+          Liberty Lock Plus checks page URLs and visible page content against its local filter rules. Direct blocking uses Chrome's Declarative Net Request system. Result hiding runs inside matching pages and removes items that match your selected filters.
+        </p>
+        <p>
+          This means the extension needs broad site access to do its job, but the purpose of that access is filtering in your browser. The extension does not need to send your browsing history to a Liberty Lock Plus server to function.
+        </p>
+
+        <h2>Your control</h2>
+        <p>
+          You can adjust the seed list, add your own distractions, remove items you disagree with, and turn features on or off as your needs change. The extension is meant to be a tool you steer, not a system that makes hidden decisions for you.
+        </p>
+      </section>
+
+      <section class="detail-grid privacy-grid" aria-label="Privacy commitments">
+        <article>
+          <h2>No required account</h2>
+          <p>You can use the extension without creating a Liberty Lock Plus login or handing over an email address.</p>
+        </article>
+        <article>
+          <h2>No attention resale</h2>
+          <p>The product is not built around selling your clicks, your habits, or your list of blocked sites.</p>
+        </article>
+        <article>
+          <h2>Clear permissions</h2>
+          <p>The extension asks for browser permissions because blocking and hiding content requires access to the pages where that content appears.</p>
+        </article>
+        <article>
+          <h2>Easy review</h2>
+          <p>The extension files are plain web extension source files, which makes the behavior easier to inspect than a closed desktop app.</p>
+        </article>
+      </section>
+
+      <section class="callout-band">
+        <div>
+          <p class="eyebrow">Plain English</p>
+          <h2>The privacy goal is boring on purpose.</h2>
+          <p>Keep your filters close to you, keep the controls understandable, and avoid turning focus protection into another data product.</p>
+        </div>
+      </section>
     </main>
 
     <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
@@ -57,6 +109,6 @@
 
     <footer class="footer">&copy; 2026 Liberty Lock Plus. Built to protect focus.</footer>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260522-5"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liberty Lock Plus | Chrome Extension</title>
-  <link rel="stylesheet" href="styles.css?v=20260522-2">
+  <link rel="stylesheet" href="styles.css?v=20260522-5">
 </head>
 <body>
   <div class="site-shell">
@@ -17,8 +17,10 @@
         <a href="mission.html">Mission</a>
         <a href="about.html">About Us</a>
         <a href="privacy.html">Privacy</a>
+        <a href="donate.html">Support</a>
       </div>
-      <button class="button" onclick="triggerInstall()">Install</button>
+      <a class="button secondary nav-support" href="donate.html">Donate</a>
+      <a class="button" href="https://chromewebstore.google.com/detail/liberty-lock-plus/bidblgoobmadjoogpfpldkonhlhlhfmn">Install</a>
     </nav>
 
     <main class="home-main">
@@ -34,7 +36,7 @@
           <p class="hero-copy">
             Block distracting sites, quiet harmful feeds, and keep your browser pointed at the work you opened it to finish.
           </p>
-          <button class="button install-button" onclick="triggerInstall()">Add to Chrome</button>
+          <a class="button install-button" href="https://chromewebstore.google.com/detail/liberty-lock-plus/bidblgoobmadjoogpfpldkonhlhlhfmn">Add to Chrome</a>
           <p class="cta-note">No account required. Your filters stay under your control.</p>
           <div class="trust-row" aria-label="Extension highlights">
             <span>No account required</span>
@@ -73,6 +75,26 @@
       </div>
     </main>
 
+    <section id="support" class="support-band" aria-labelledby="support-title">
+      <div class="support-copy">
+        <p class="eyebrow">Support Development</p>
+        <h2 id="support-title">Help keep Liberty Lock Plus simple, private, and maintained.</h2>
+        <p>
+          Optional donations help cover testing time, Chrome Web Store maintenance, design work, and future filter improvements. The extension stays useful without requiring an account or subscription.
+        </p>
+      </div>
+      <div class="support-card">
+        <span class="support-icon" aria-hidden="true">$</span>
+        <strong>Buy the developer a coffee</strong>
+        <p>One-time support is the easiest way to help this project keep improving.</p>
+        <a class="button donate-button" href="donate.html">
+          <span aria-hidden="true">&#9749;</span>
+          Support the project
+        </a>
+        <small>One simple page for voluntary support.</small>
+      </div>
+    </section>
+
     <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
       <div class="modal-card">
         <span class="brand-mark modal-logo" aria-hidden="true"><span class="logo-shackle"></span><span class="logo-body"></span></span>
@@ -84,6 +106,6 @@
 
     <footer class="footer">&copy; 2026 Liberty Lock Plus. Built to protect focus.</footer>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260522-5"></script>
 </body>
 </html>

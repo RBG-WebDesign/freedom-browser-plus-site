@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Liberty Lock Plus</title>
-  <link rel="stylesheet" href="styles.css?v=20260522-2">
+  <link rel="stylesheet" href="styles.css?v=20260522-5">
 </head>
 <body>
   <div class="site-shell">
@@ -17,8 +17,10 @@
         <a href="mission.html">Mission</a>
         <a href="about.html">About Us</a>
         <a href="privacy.html">Privacy</a>
+        <a href="donate.html">Support</a>
       </div>
-      <button class="button" onclick="triggerInstall()">Install</button>
+      <a class="button secondary nav-support" href="donate.html">Donate</a>
+      <a class="button" href="https://chromewebstore.google.com/detail/liberty-lock-plus/bidblgoobmadjoogpfpldkonhlhlhfmn">Install</a>
     </nav>
 
     <main class="page">
@@ -44,6 +46,50 @@
           <p>Local control, transparent filters, practical focus, and a browsing experience that helps people leave the screen with energy left.</p>
         </article>
       </section>
+
+      <section class="split-section">
+        <div class="prose">
+          <h2>Why this exists</h2>
+          <p>
+            Liberty Lock Plus grew out of a simple frustration: the browser is where a lot of good work happens, but it is also where the easiest distractions wait. The extension is built for people who want to open the web with a purpose and leave with that purpose intact.
+          </p>
+          <p>
+            The goal is not to make the internet smaller. The goal is to make it more intentional. You decide which sites, phrases, feeds, and patterns create noise for you, then the extension helps push those things out of the way while you work.
+          </p>
+        </div>
+        <aside class="note-panel">
+          <strong>Built for practical focus</strong>
+          <p>Liberty Lock Plus favors clear controls, local settings, and visible rules over complicated accounts or opaque ranking systems.</p>
+        </aside>
+      </section>
+
+      <section class="detail-grid" aria-label="How we build Liberty Lock Plus">
+        <article>
+          <h2>Small by design</h2>
+          <p>The extension is intentionally narrow. It blocks direct site visits and hides matching search, news, video, and forum results so your browser feels less like an attention trap.</p>
+        </article>
+        <article>
+          <h2>User judgment first</h2>
+          <p>Seed lists are only a starting point. You can review, remove, or add filters based on your own goals, habits, and tolerance for friction.</p>
+        </article>
+        <article>
+          <h2>No account needed</h2>
+          <p>The core experience does not ask you to sign in. Your settings are meant to stay inside the extension, close to the browser choices you are making.</p>
+        </article>
+        <article>
+          <h2>Maintained with care</h2>
+          <p>Search pages and feeds change often. Updates focus on keeping the extension understandable, useful, and quiet enough to disappear into the workday.</p>
+        </article>
+      </section>
+
+      <section class="callout-band">
+        <div>
+          <p class="eyebrow">Support</p>
+          <h2>Want to help keep it maintained?</h2>
+          <p>Voluntary support helps cover testing time, browser changes, store assets, and new filter improvements.</p>
+        </div>
+        <a class="button donate-button compact" href="donate.html"><span aria-hidden="true">&#9749;</span> Buy me a coffee</a>
+      </section>
     </main>
 
     <div id="install-success" class="modal" role="dialog" aria-modal="true" aria-labelledby="install-title">
@@ -57,6 +103,6 @@
 
     <footer class="footer">&copy; 2026 Liberty Lock Plus. Built to protect focus.</footer>
   </div>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260522-5"></script>
 </body>
 </html>
